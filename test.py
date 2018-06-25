@@ -80,6 +80,7 @@ if __name__ == '__main__':
     bk_xi2 = Book(info='寸芒')
     bk_qian = Book(info='飘渺之旅')
     bk_san = Book(info='冰火魔厨')
-    db.session.add_all([u_xi, u_nan, au_qian, au_san, bk_xi, bk_xi2, bk_qian, bk_san])
+    bk_long = Book(info='龙族')
+    db.session.add_all([u_xi, u_nan, au_qian, au_san, bk_xi, bk_xi2, bk_qian, bk_san, bk_long])
     db.session.commit()
     app.run()
