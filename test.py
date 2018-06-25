@@ -7,7 +7,7 @@ from deldata import apt
 
 
 app = Flask(__name__)
-#注册蓝图对象
+
 app.register_blueprint(apt)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:mysql@localhost/test'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
